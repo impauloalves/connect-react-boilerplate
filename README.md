@@ -1,8 +1,4 @@
-# Atlassian Connect App using Express
+# A boilerplate for Atlassian Jira Connect App using Express, React and MongoDB
 
-Congratulations!
-You've successfully created an Atlassian Connect App using the Express web application framework.
+## Getting Started
 
-## What's next?
-
-[Read the docs](https://bitbucket.org/atlassian/atlassian-connect-express/src/master/README.md).

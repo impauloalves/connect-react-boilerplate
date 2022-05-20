@@ -28,7 +28,6 @@ import nocache from 'nocache';
 
 // Routes live here; this is the C in MVC
 import routes from './routes';
-import { addServerSideRendering } from './server-side-rendering';
 
 // Bootstrap Express and atlassian-connect-express
 const app = express();
@@ -48,9 +47,6 @@ const handlebarsEngine = hbs.express4({partialsDir: viewsDir});
 app.engine('hbs', handlebarsEngine);
 app.set('view engine', 'hbs');
 app.set('views', viewsDir);
-
-// Configure jsx (jsx files should go in views/ and export the root component as the default export)
-addServerSideRendering(app, handlebarsEngine);
 
 // Atlassian security policy requirements
 // http://go.atlassian.com/security-requirements-for-cloud-apps
@@ -75,7 +71,7 @@ app.use(compression());
 app.use(addon.middleware());
 
 // Mount the static files directory
-const staticDir = path.join(__dirname, 'public');
+const staticDir = path.join(__dirname, '../public');
 app.use(express.static(staticDir));
 
 // Atlassian security policy requirements
