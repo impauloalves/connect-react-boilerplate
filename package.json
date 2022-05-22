@@ -11,30 +11,30 @@
     "lint": "eslint server/app.js server/routes"
   },
   "dependencies": {
-    "@atlaskit/button": "^15.1.0",
-    "atlassian-connect-express": "^7.4.7",
-    "body-parser": "^1.19.0",
+    "@atlaskit/button": "^16.3.1",
+    "atlassian-connect-express": "^7.5.1",
+    "body-parser": "^1.20.0",
     "compression": "^1.7.4",
-    "cookie-parser": "^1.4.5",
+    "cookie-parser": "^1.4.6",
     "errorhandler": "^1.5.1",
     "esm": "^3.2.25",
-    "express": "^4.17.1",
+    "express": "^4.18.1",
     "express-hbs": "^2.4.0",
-    "helmet": "^4.1.1",
+    "helmet": "^5.1.0",
     "morgan": "^1.10.0",
-    "nocache": "^2.1.0",
+    "nocache": "^3.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
-    "concurrently": "^5.3.0",
+    "concurrently": "^7.2.0",
     "eslint": "^7.10.0",
-    "eslint-plugin-react": "^7.21.3",
+    "eslint-plugin-react": "^7.30.0",
     "longjohn": "^0.2.12",
     "ngrok": "^3.3.0",
-    "nodemon": "^2.0.4",
-    "parcel-bundler": "^1.12.4",
-    "parcel-plugin-externals": "^0.5.1"
+    "nodemon": "^2.0.16",
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-externals": "^0.5.2"
   }
 }
